@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
-import {pokeReducer} from "./pokeReducer/pokeReducer";
+import {menuReducer} from "./MenuReducer/menuReducer";
 
 export const combineReducer = combineReducers({
-    pokeReducer: pokeReducer
+    menuReducer: menuReducer
 })
