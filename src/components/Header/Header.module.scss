@@ -1,0 +1,54 @@
+.Header {
+  background: #2b2d2f;
+  box-shadow: 0 0 3px rgb(0 0 0 / 50%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-width: 960px;
+  height: 64px;
+  color: #fff;
+  line-height: 64px;
+  z-index: 100;
+
+  & span {
+   margin-right: 10px;
+  }
+
+  & nav {
+    width: 1440px;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  & img {
+    width: 200px;
+    height: 36px;
+    padding: 15px 0 0 0;
+  }
+
+  & nav ul li {
+    width: 960px;
+    height: 64px;
+    color: white;
+    text-align: center;
+
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+
+  }
+
+  & a {
+    color: white;
+  }
+
+  & .Basket {
+  padding-right: 90px;
+  }
+
+}

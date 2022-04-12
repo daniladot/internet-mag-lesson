@@ -1,12 +1,16 @@
-import './App.css'
-import ProductItem from './components/ProductItem/ProductItem'
+
+import './App.css';
+import {useDispatch, useSelector} from "react-redux";
+import {changeName, fetchPokemon} from "./state/pokeReducer/action";
+import Header from './components/Header/Header'
 
 function App() {
-  return (
-    <div className="App">
-      <ProductItem />
-    </div>
-  )
+
+    return (
+        <div className="App">
+            <Header />
+        </div>
+    );
 }
 
 export default App
