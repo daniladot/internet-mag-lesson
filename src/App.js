@@ -1,6 +1,6 @@
 import styles from './App.module.scss';
 import {useDispatch, useSelector} from "react-redux";
-import {changeName, fetchMenu, fetchPokemon} from "./state/MenuReducer/action";
+import {fetchAllMenu, fetchMenu} from "./state/MenuReducer/action";
 import MenuItem from './components/MenuItem/MenuItem.js';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -10,11 +10,14 @@ import AsideMenu from "./components/AsideMenu/AsideMenu";
 import {useEffect} from "react";
 
 function App() {
+    const menuItemsAll = useSelector(state => state.menuReducer.menuAll)
+
 
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(fetchMenu())
+        dispatch(fetchAllMenu())
     }, [])
 
     return (
@@ -22,7 +25,7 @@ function App() {
             <Header/>
             <div className={styles.MainContent}>
                 <AsideMenu/>
-                <MenuPage/>
+                <MenuPage menuItemsAll/>
             </div>
             <Footer/>
         </div>

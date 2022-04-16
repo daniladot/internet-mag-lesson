@@ -8,7 +8,6 @@ function AsideMenu(props) {
     const menuItems = useSelector(state => state.menuReducer.menu)
 
 
-    console.log(menuItems)
     return (
         <div className={styles.AsideMenu}>
             <h3>МЕНЮ ДОСТАВКИ</h3>

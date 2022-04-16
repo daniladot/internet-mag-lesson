@@ -5,9 +5,9 @@ function ProductItem(props) {
   return (
     <div className={styles.catalog}>
       <div className={styles.item}>
-        <a class={styles.pic} src={props.url} href="###">
+        <a class={styles.pic}  href="###">
           <img
-            src="https://static.yakitoriya.ru/media/cache/38/92/38928865468d3827ca04c9082414edce.jpg"
+            src={props.url}
             alt="Маринара"
           ></img>
         </a>

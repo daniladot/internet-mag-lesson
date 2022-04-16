@@ -19,15 +19,6 @@ function Footer() {
                         <p>ООО "ВОЙСТЕЛ"    ОГРН 1177746857551</p>
                         <p>Прием заказов: c 10:00 до 4:45 <br /> Телефон: +7 495 234-24-24;</p>
                         <p className={styles.footer_main__title}>Мобильное приложение</p>
-                        <a href="#!" className={styles.store_links__item} >
-                            {/* <img src={gp} alt="" /> */}
-                        </a>
-                        <a href="#!" className={styles.store_links__item} >
-                            {/* <img src={AppS} alt="" /> */}
-                        </a>
-                        <a href="#!" className={styles.store_links__item} >
-                            {/* <img src="" alt="" /> */}
-                        </a>
                     </div>
 
                     <div className={styles.col}>
@@ -102,15 +93,7 @@ function Footer() {
                         <span>&copy; 2022 «Якитория»</span>
                     </div>
                     <div className={styles.col}>
-                        <div className={styles.social_links}>
-                            <a href="#!" className={styles.social_links__item} ></a>
-                            <a href="#!" className={styles.social_links__item} >
-                                <img src="" alt="vk" className={styles.icon__vk} />
-                            </a>
-                            <a href="#!" className={styles.social_links__item} >
-                                <img src="" alt="tg" className={styles.icon__tg} />
-                            </a>
-                        </div>
+
                     </div>
                 </div>
             </div>
