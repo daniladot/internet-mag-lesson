@@ -1,15 +1,14 @@
-a {
-  display: none;
-}
+.Slider {
+  padding: 0!important;
+  width: calc(100% - 274px);
+  margin-left: 274px;
 
-img {
-  transition: opacity 400ms ease 600ms;
-  opacity: .85;
-  vertical-align: middle;
-  transform: rotate(90deg);
-}
+  li{
+    padding: 0!important;
+  }
 
-.carousel {
-  transform: rotate(-90deg);
-  margin-top: 60px;
+
+  img {
+    width: 100%;
+  }
 }

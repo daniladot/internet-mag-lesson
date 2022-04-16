@@ -14,7 +14,7 @@ function AsideMenu(props) {
             {
                 menuItems.map((item, index) => {
                     return (
-                        <MenuItem url={item.imgUrl} itemName={item.name}/>
+                        <MenuItem url={item.imgUrl} categoryName={item.categoryName} itemName={item.name}/>
                     )
                 })
             }

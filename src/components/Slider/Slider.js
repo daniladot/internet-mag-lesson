@@ -1,6 +1,15 @@
-import React from 'react';
-import styles from './Slider.module.scss'
-import { Carousel } from 'react-carousel-minimal';
+import React from "react";
+import styles from "./Slider.module.scss"
+import {Splide, SplideSlide} from "@splidejs/react-splide";
+// Default theme
+import "@splidejs/react-splide/css";
+
+// or other themes
+import "@splidejs/react-splide/css/skyblue";
+import "@splidejs/react-splide/css/sea-green";
+
+// or only core styles
+import "@splidejs/react-splide/css/core";
 
 
 function Slider() {
@@ -29,32 +38,27 @@ function Slider() {
     ];
 
     const captionStyle = {
-        fontSize: '20px',
-        fontfamily: 'Helvetica',
-        fontstyle: 'normal',
-        transform: 'rotate(90deg)',
+        fontSize: "20px",
+        fontfamily: "Helvetica",
+        fontstyle: "normal",
+        transform: "rotate(90deg)",
     }
 
     return (
-        <div className={styles.carousel}>
-            <Carousel
-                data={data}
-                time={2500}
-                width="700px"
-                height="700px"
-                captionStyle={captionStyle}
-                captionPosition="center"
-                automatic={true}
-                dots={true}
-                slideImageFit="cover"
-                style={{
-                    textAlign: "center",
-                    maxWidth: "700px",
-                    maxHeight: "700px",
-                    margin: "40px auto",
-                }}
-            />
-        </div>
+        <Splide className={styles.Slider}
+                options={ {
+                    arrows: false,
+                    pagination: false,
+                    autoplay:'playing',
+                } }
+        >
+            <SplideSlide>
+                <img src={data[0].image} alt="Image 1"/>
+            </SplideSlide>
+            <SplideSlide>
+                <img src={data[1].image} alt="Image 2"/>
+            </SplideSlide>
+        </Splide>
     );
 }
 
