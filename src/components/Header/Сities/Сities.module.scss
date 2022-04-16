@@ -1,0 +1,61 @@
+.ChooseRegion {
+  width: 380px;
+  height: 310px;
+  background: #2b2d2f;
+  position: absolute;
+  top: 73px;
+  right: 345px;
+  text-align: left;
+  padding: 50px 0 0 60px;
+  color: white;
+
+  & .Cross {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+
+    & span {
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: lightgrey;
+      transform: rotate(-45deg);
+
+    }
+
+    & span:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: lightgrey;
+      transform: rotate(90deg);
+    }
+
+  }
+
+  & h3 {
+    padding: 0 0 10px 10px;
+    color: red;
+    font-weight: unset;
+  }
+
+  & ul li {
+    padding: 10px;
+    font-size: 14px;
+
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+
+.Basket {
+  width: 320px;
+  height: 388px;
+  background: #2b2d2f;
+  border: 1px solid gray;
+  display: block;
+  position: absolute;
+  top: 63px;
+  right: 20px;
+  padding: 25px 0 16px 0;
+  color: #c0c0c0;
+  line-height: 1.5;
+  text-align: left;
+  transition: opacity 200ms ease;
+
+
+  & h3 {
+    color: white;
+    width: 320px;
+    height: 64px;
+    padding: 0 0 16px 30px;
+  }
+
+  & .myOrder {
+    width: 319px;
+    height: 64px;
+    background: #2b2d2f;
+    line-height: 1.5;
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+    &:hover {
+      color: red;
+      cursor: pointer;
+    }
+
+    & .orderText {
+      padding: 0 0 0 10px;
+      white-space: nowrap;
+    }
+
+    & .Zero {
+      padding: 0 0 0 165px;
+    }
+    & .Rub {
+      padding-left: 5px;
+    }
+
+  }
+
+  & .totalOrder {
+    padding: 30px 0 0 0;
+    width: 319px;
+    height: 80px;
+    line-height: 1.5;
+    text-align: center;
+    background: #44474a;
+    border: 1px solid gray;
+
+
+    & .orderText {
+      font-size: 15px;
+      padding: 0 0 0 10px;
+      white-space: nowrap;
+    }
+    & .Zero {
+      padding: 0 0 0 200px;
+    }
+
+    & .Rub {
+      padding-left: 5px;
+    }
+  }
+
+  & .Total {
+    padding: 30px 0 0 0;
+    width: 320px;
+    height: 80px;
+    text-align: center;
+
+    & .orderText {
+      font-size: 15px;
+      padding: 0 95px 0 10px;
+
+    }
+
+    & .Rub {
+      padding-left: 5px;
+    }
+
+    & button {
+      margin: 30px 0 0 0;
+      font-size: 14px;
+      height: 50px;
+      width: 150px;
+      color: lightgray;
+      background: #44474a;
+      border-width: 5px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+  }
+
+}
