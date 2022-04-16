@@ -11,17 +11,24 @@
   line-height: 64px;
   z-index: 100;
 
+
+  & h3 {
+    height: 64px;
+  }
+
   & span {
    margin-right: 10px;
   }
 
   & nav {
-    width: 1440px;
+    width: 100%;
+    height: 64px;
   }
 
   & ul {
     display: flex;
     justify-content: space-evenly;
+    height: 64px;
   }
 
   & img {
@@ -43,12 +50,27 @@
 
   }
 
+  & .Header_region__active {
+    font-size: 14px;
+  }
+
   & a {
     color: white;
   }
 
   & .Basket {
-  padding-right: 90px;
+    white-space: nowrap;
   }
+
+  &  .Point {
+    width: 18px;
+    height: 30px;
+  }
+
+  &  .Login {
+    width: 18px;
+    height: 30px;
+  }
+
 
 }

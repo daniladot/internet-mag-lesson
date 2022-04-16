@@ -1,14 +1,11 @@
-import styles from './App.module.scss';
-import { useDispatch, useSelector } from "react-redux";
-import { fetchAllMenu, fetchMenu } from "./state/MenuReducer/action";
-import MenuItem from './components/MenuItem/MenuItem.js';
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import ProductItem from "./components/ProductItem/ProductItem";
-import MenuPage from "./pages/MenuPage/MenuPage";
-import AsideMenu from "./components/AsideMenu/AsideMenu";
-import { useEffect } from "react";
-import Slider from './components/Slider/Slider';
+import './App.css';
+import {useDispatch, useSelector} from "react-redux";
+import {changeName, fetchPokemon} from "./state/pokeReducer/action";
+import Header from './components/Header/Header'
+import Busket from "./components/Busket/Busket";
+import Cities from "./components/Header/Сities/Сities";
+import LoginForm from "./components/Header/LoginForm/LoginForm";
+import RegistrationForm from "./components/Header/RegistrationForm/RegistrationForm";
 
 function App() {
     const menuItemsAll = useSelector(state => state.menuReducer.menuAll)
@@ -24,6 +21,11 @@ function App() {
     return (
         <div className={styles.App}>
             {/* <Header /> */}
+            <Header />
+            <Busket />
+            <RegistrationForm />
+            <LoginForm />
+            <Cities />
             <Slider />
             <div className={styles.MainContent}>
                 {/* <AsideMenu /> */}
