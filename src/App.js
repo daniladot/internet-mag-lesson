@@ -1,13 +1,14 @@
 import styles from './App.module.scss';
-import {useDispatch, useSelector} from "react-redux";
-import {fetchAllMenu, fetchMenu} from "./state/MenuReducer/action";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchAllMenu, fetchMenu } from "./state/MenuReducer/action";
 import MenuItem from './components/MenuItem/MenuItem.js';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import ProductItem from "./components/ProductItem/ProductItem";
 import MenuPage from "./pages/MenuPage/MenuPage";
 import AsideMenu from "./components/AsideMenu/AsideMenu";
-import {useEffect} from "react";
+import { useEffect } from "react";
+import Slider from './components/Slider/Slider';
 
 function App() {
     const menuItemsAll = useSelector(state => state.menuReducer.menuAll)
@@ -22,12 +23,13 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <Header/>
+            {/* <Header /> */}
+            <Slider />
             <div className={styles.MainContent}>
-                <AsideMenu/>
-                <MenuPage menuItemsAll/>
+                {/* <AsideMenu /> */}
+                {/*<MenuPage menuItemsAll/> */}
             </div>
-            <Footer/>
+            {/* <Footer /> */}
         </div>
     );
 }

@@ -1,0 +1,15 @@
+a {
+  display: none;
+}
+
+img {
+  transition: opacity 400ms ease 600ms;
+  opacity: .85;
+  vertical-align: middle;
+  transform: rotate(90deg);
+}
+
+.carousel {
+  transform: rotate(-90deg);
+  margin-top: 60px;
+}
