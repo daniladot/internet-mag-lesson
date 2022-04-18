@@ -81,7 +81,7 @@ a:hover {
   cursor: pointer;
 }
 
-p {
+.footer_main p {
   margin: 0 0 20px 0;
 }
 
@@ -135,20 +135,6 @@ a {
   fill: #888;
 }
 
-span {
-  margin-left: -800px;
+.col span {
+  margin-left: -440px;
 }
-
-.store_links__item {
-  display: block;
-  width: 100px;
-  height: 34px;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  background: red;
-}
-
-// .store_links__item img {
-//   width: 100px;
-//   height: 54px;
-// }
