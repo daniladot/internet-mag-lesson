@@ -8,16 +8,15 @@
   min-width: 960px;
   height: 64px;
   color: #fff;
-  line-height: 64px;
+  padding-top: 20px;
   z-index: 100;
-
 
   & h3 {
     height: 64px;
   }
 
   & span {
-   margin-right: 10px;
+    margin-right: 10px;
   }
 
   & nav {
@@ -32,9 +31,11 @@
   }
 
   & img {
-    width: 200px;
-    height: 36px;
+    width: 100px;
+    height: 40px;
     padding: 15px 0 0 0;
+    margin-top: -15px;
+
   }
 
   & nav ul li {
@@ -43,7 +44,8 @@
     color: white;
     text-align: center;
 
-    &:hover {
+
+    & p:hover {
       color: red;
       cursor: pointer;
     }
@@ -58,19 +60,21 @@
     color: white;
   }
 
-  & .Basket {
-    white-space: nowrap;
-  }
-
-  &  .Point {
+  & .Point {
     width: 18px;
     height: 30px;
   }
 
-  &  .Login {
+  & .Login {
     width: 18px;
     height: 30px;
   }
-
-
 }
+
+
+
+
+
+
+
+

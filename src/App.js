@@ -16,6 +16,7 @@ import Сities from "./components/Header/Сities/Сities"
 import {Route, Router, Routes} from "react-router-dom";
 
 
+
 function App() {
     const menuItemsAll = useSelector(state => state.menuReducer.menuAll)
 
@@ -30,7 +31,6 @@ function App() {
     return (
         <div className={styles.App}>
             <Header/>
-            {/*<Busket/>*/}
             <div className={styles.MainContent}>
                 <Routes>
                     <Route path={"/"} element={<div>
@@ -50,10 +50,9 @@ function App() {
                         <MenuPage url='rolls'/>
                     </div>}/>
                 </Routes>
-
             </div>
             <Footer/>
-        </div>
+;        </div>
     );
 }
 

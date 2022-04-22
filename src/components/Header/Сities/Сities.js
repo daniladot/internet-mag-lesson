@@ -4,17 +4,14 @@ import React from 'react';
 function Сities(props) {
     return (
         <div className={styles.ChooseRegion}>
-            <div className={styles.Cross} >
-                <span></span>
-            </div>
-            <h3>Укажите свой город</h3>
-            <ul>
-                <li>Москва и Московская область</li>
-                <li>Воронеж</li>
-                <li>Екатеринбург</li>
-                <li>Пенза</li>
-                <li>Тверь</li>
-            </ul>
+                <h2 className={styles.Title}>Укажите свой город</h2>
+                <ul className={styles.ChooseRegion__List}>
+                    <li>Москва и Московская область</li>
+                    <li>Воронеж</li>
+                    <li>Екатеринбург</li>
+                    <li>Пенза</li>
+                    <li>Тверь</li>
+                </ul>
         </div>
     );
 }

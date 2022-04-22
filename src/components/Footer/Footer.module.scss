@@ -21,6 +21,7 @@
   margin-right: 2.3%;
   width: auto;
   height: auto;
+
 }
 
 .footer_main div{
@@ -81,12 +82,11 @@ a:hover {
   cursor: pointer;
 }
 
-p {
+.footer_main p {
   margin: 0 0 20px 0;
 }
 
 a {
-  border-bottom: 1px solid #c0c0c0;
   color: #fff;
   text-decoration: none;
   transition: all 200ms ease;
@@ -135,8 +135,8 @@ a {
   fill: #888;
 }
 
-span {
-  margin-left: -800px;
+.col span {
+  margin-left: -440px;
 }
 
 .store_links__item {

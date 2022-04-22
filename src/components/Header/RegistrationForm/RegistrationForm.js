@@ -1,14 +1,20 @@
 import styles from './RegistrationForm.module.scss'
-import React from 'react';
+import React, {useState} from 'react';
+import {Link} from  'react-router-dom';
+import LoginForm from "../LoginForm/LoginForm";
 
 function RegistrationForm(props) {
+
+    const [closeForm, setCloseForm] = useState(true)
+    console.log(1)
+
     return (
         <div className={styles.RegistrationForm}>
-            <div className={styles.Cross} >
+            <div className={styles.Cross} onClick={() => setCloseForm(false)}>
                 <span></span>
             </div>
-            <form action="mysuperscript.php" autoComplete="on">
-                <h2> Sign up </h2>
+            <form action="#" autoComplete="on">
+                <h2 className={styles.Title}> Sign up </h2>
                 <p>
                     <label className={styles.SignIn}>Your username</label>
                     <br/>
@@ -31,9 +37,10 @@ function RegistrationForm(props) {
                 <button className={styles.SignInButton}>Send</button>
                 <p className={styles.Change_link}>
                     Already a member ?
-                    <a href="#tologin" className={styles.To_LogIn}> Go and log in </a>
-                </p>
+                    <a href="#tologin" className={styles.To_LogIn}>Go and log in</a>
+                 </p>
             </form>
+            {closeForm}
         </div>
     );
 }

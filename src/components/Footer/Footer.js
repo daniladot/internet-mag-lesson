@@ -8,11 +8,11 @@ function Footer() {
         <div className={styles.footer_main}>
             <div className={styles.container}>
                 <div className={styles.row}>
-
                     <div className={styles.col}>
                         <p>
                             <a href="#!">
-                                <img className={styles.logo_main} src="https://static.yakitoriya.ru/static/build/img/svg/yaki_logo.svg" alt="Якитория - доставка суши" />
+                                <img className={styles.logo_main} src="https://www.aislelabs.com/wp-content/uploads/2020/04/1280px-YO_Sushi_logo.svg_.png"
+                                     alt="Суши-стор" />
                             </a>
                         </p>
                         <p>Доставка суши — онлайн сервис заказа суши и других блюд в Москве.</p>
@@ -22,7 +22,7 @@ function Footer() {
                     </div>
 
                     <div className={styles.col}>
-                        <p className={styles.footer_main__title}>Якитория</p>
+                        <p className={styles.footer_main__title}>Sushi-store</p>
                         <nav className={styles.nav_list}>
                             <ul className={styles.nav_list__layout}>
                                 <li className={styles.nav_list__item}>

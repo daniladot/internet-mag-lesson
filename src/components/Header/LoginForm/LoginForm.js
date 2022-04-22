@@ -1,15 +1,18 @@
 import styles from './LoginForm.module.scss'
-
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from "../Modal/modal";
+import {Link} from "react-router-dom";
+import RegistrationForm from "../RegistrationForm/RegistrationForm";
+import {Route, Router, Routes} from "react-router-dom";
 
 function LoginForm(props) {
+
+    const [registrationForm, setRegistrationForm] = useState(false)
+
     return (
         <div className={styles.LoginForm}>
-            <div className={styles.Cross} >
-                <span></span>
-            </div>
-            <form action="mysuperscript.php" autoComplete="on">
-                <h2>Log in</h2>
+            <form action="#" autoComplete="on">
+                <h2 className={styles.Title}>Log in</h2>
                 <p>
                     <label className={styles.LogIn} > Your email or username </label>
                     <br/>
@@ -27,9 +30,14 @@ function LoginForm(props) {
                 <button className={styles.LoginButton}>Send</button>
                 <p className={styles.Change_link}>
                     Not a member yet ?
-                    <a href="#tosubscribe" className={styles.To_subscribe}>Join us</a>
+                    <a href="#" className={styles.To_subscribe} onClick={() => setRegistrationForm(!registrationForm)}> Join us</a>
+                    {/*<a href="#" className={styles.To_subscribe} onClick={() => setRegistrationForm(true)}> Join us</a>*/}
                 </p>
             </form>
+            {/*<Modal active={registrationForm} setActive={setRegistrationForm}>*/}
+            {/*    <RegistrationForm />*/}
+            {/*</Modal>*/}
+            {registrationForm && <RegistrationForm />}
         </div>
     );
 }
