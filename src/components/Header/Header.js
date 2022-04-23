@@ -33,7 +33,7 @@ export default function Header(props) {
                     <li><p onClick={() => setLoginModalActive(true)}>Login</p></li>
                     <li><p onClick={() => setCitiesModalActive(true)}
                            className={styles.Header_region__active}>Cities</p></li>
-                    <li><p onClick={() => setModalActive(true)}>Корзина</p></li>
+                    <li  onMouseEnter={() => setModalActive(true)} onMouseLeave={() => setModalActive(false)}><p>Корзина</p></li>
                 </ul>
             </nav>
             <Modal active={loginModalActive} setActive={setLoginModalActive}>
@@ -42,9 +42,7 @@ export default function Header(props) {
             <Modal active={citiesModalActive} setActive={setCitiesModalActive}>
                 <Cities/>
             </Modal>
-            <Modal active={modalActive} setActive={setModalActive}>
-                <Busket/>
-            </Modal>
+            {modalActive && <Busket className={styles.Basket} setModalActive={setModalActive}/>}
         </section>
 
     )

@@ -41,7 +41,7 @@ function Slider() {
                 <img src={data[0].image} alt="Image 1" />
                 <div className={styles.background}>
                     <p className={styles.caption}>«Монстры на каникулах»</p>
-                    <p className={styles.caption1}>уже в «Якитории»!</p>
+                    <p className={styles.caption1}>уже в YD!</p>
                 </div>
             </SplideSlide>
             <SplideSlide>

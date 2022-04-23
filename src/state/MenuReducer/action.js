@@ -11,6 +11,7 @@ export const setAllMenu = (value) => ({ type: SET_All_MENU, payload: value })
 
 export const setCurrentMenu = (value) => ({ type: SET_CURRENT_MENU, payload: value })
 
+
 export const fetchRequest = () => ({ type: FETCH_REQUEST })
 export const fetchSuccess = () => ({ type: FETCH_SUCCESS })
 export const fetchError = (err) => ({ type: FETCH_ERROR, payload: err })

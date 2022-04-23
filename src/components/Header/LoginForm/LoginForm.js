@@ -9,6 +9,7 @@ function LoginForm(props) {
 
     const [registrationForm, setRegistrationForm] = useState(false)
 
+
     return (
         <div className={styles.LoginForm}>
             <form action="#" autoComplete="on">
@@ -37,7 +38,7 @@ function LoginForm(props) {
             {/*<Modal active={registrationForm} setActive={setRegistrationForm}>*/}
             {/*    <RegistrationForm />*/}
             {/*</Modal>*/}
-            {registrationForm && <RegistrationForm />}
+            {registrationForm && <RegistrationForm setRegistrationForm={setRegistrationForm} />}
         </div>
     );
 }

@@ -5,12 +5,11 @@ import LoginForm from "../LoginForm/LoginForm";
 
 function RegistrationForm(props) {
 
-    const [closeForm, setCloseForm] = useState(true)
-    console.log(1)
+
 
     return (
         <div className={styles.RegistrationForm}>
-            <div className={styles.Cross} onClick={() => setCloseForm(false)}>
+            <div className={styles.Cross} onClick={() => props.setRegistrationForm(false)}>
                 <span></span>
             </div>
             <form action="#" autoComplete="on">
@@ -40,7 +39,6 @@ function RegistrationForm(props) {
                     <a href="#tologin" className={styles.To_LogIn}>Go and log in</a>
                  </p>
             </form>
-            {closeForm}
         </div>
     );
 }

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from "react"
 import styles from './ProductItem.module.scss'
 
 function ProductItem(props) {
+
+  console.log(props.count)
   return (
     <div className={styles.catalog}>
       <div className={styles.item}>
@@ -19,9 +21,9 @@ function ProductItem(props) {
           </div>
           <div className={styles.skin}>
             <div className={styles.num}>
-              <span className={styles.minus}></span>
-              <input type="text" className={styles.in} value="0" readonly="" />
-              <span className={styles.plus}></span>
+              <span className={styles.minus} onClick={() => props.deleteBasket(props.name)}></span>
+              <input type="text" className={styles.in} value={props.count} readonly="" />
+              <span className={styles.plus} onClick={() => props.addItemInBasket({name: props.name, count: props.count + 1, price: props.price})}></span>
             </div>
           </div>
         </div>
