@@ -6,8 +6,7 @@
   flex-direction: row;
   position: relative;
   // margin: 0 -4px 32px 0;
-  padding: 10px;
-  background: #000;
+  width: 100%;
 
   .item {
     background: #000;
@@ -31,6 +30,7 @@
       font-size: 0;
       line-height: 0;
       text-align: center;
+      border: none;
     }
     img {
       max-width: 100%;
@@ -92,9 +92,9 @@
     }
 
     .skin .num span {
-      width: 40%;
+      width: 30%;
       display: block;
-      height: 40px;
+      height: 35px;
       float: left;
       position: relative;
     }
@@ -105,9 +105,9 @@
       position: absolute;
       background-color: #fff;
       height: 2px;
-      width: 15px;
+      width: 18px;
       top: 50%;
-      left: 45%;
+      left: 40%;
       margin-left: -5px;
     }
 
@@ -126,13 +126,14 @@
 
     .in {
       float: left;
-      width: 15%;
+      width: 40%;
       height: 38px;
       outline: none;
       border: none;
       text-align: center;
       background-color: #000;
       color: #fff;
+      font-size: large;
     }
   }
 }

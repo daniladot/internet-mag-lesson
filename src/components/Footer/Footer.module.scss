@@ -24,7 +24,7 @@
 
 }
 
-.footer_main div{
+.footer_main div {
   display: flex;
 }
 
@@ -50,11 +50,13 @@
 }
 
 .footer_main__title {
-  font-family: 'core_rhino_45_regular', Helvetica, Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+  font-family: 'core_rhino_45_regular', Helvetica, Arial, 'Helvetica CY',
+    'Nimbus Sans L', sans-serif;
   font-style: normal;
 }
 .footer_main__title1 {
-  font-family: 'core_rhino_45_regular', Helvetica, Arial, 'Helvetica CY', 'Nimbus Sans L', sans-serif;
+  font-family: 'core_rhino_45_regular', Helvetica, Arial, 'Helvetica CY',
+    'Nimbus Sans L', sans-serif;
   font-style: normal;
   padding-top: 20px;
 }
@@ -108,7 +110,7 @@ a {
 }
 
 .mobile_btn:hover {
-  opacity: .45;
+  opacity: 0.45;
 }
 
 .footer_main__bottom {

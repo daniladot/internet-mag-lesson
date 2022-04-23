@@ -5,24 +5,17 @@ function ProductItem(props) {
   return (
     <div className={styles.catalog}>
       <div className={styles.item}>
-        <a class={styles.pic}  href="###">
-          <img
-            src={props.url}
-            alt="Маринара"
-          ></img>
+        <a class={styles.pic} href="###">
+          <img src={props.url} alt="pic"></img>
         </a>
         <p className={styles.title}>
-          <a href="###">{props.name}Наименование</a>
+          <a href="###">{props.name}</a>
         </p>
-        <div className={styles.desc}>
-          {props.desc}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
-          laudantium?
-        </div>
+        <div className={styles.desc}>{props.desc}</div>
         <div className={styles.bottom}>
           <div className={styles.price}>
-            {props.price}888
-            <span className={styles.rub}>{props.rub}&#8381;</span>
+            {props.price}
+            <span className={styles.rub}>&#8381;</span>
           </div>
           <div className={styles.skin}>
             <div className={styles.num}>
