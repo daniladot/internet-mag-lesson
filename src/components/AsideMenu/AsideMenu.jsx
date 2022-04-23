@@ -11,6 +11,11 @@ function AsideMenu(props) {
     return (
         <div className={styles.AsideMenu}>
             <h3>МЕНЮ ДОСТАВКИ</h3>
+            
+            <div className={styles.headName}>
+                <a href="">Категории</a>
+                <a href="">Ингридиенты</a>
+            </div>
             {
                 menuItems.map((item, index) => {
                     return (
