@@ -20,6 +20,13 @@ function Header(props) {
             <nav>
                 <ul>
                     <li>
+                        <img src="https://static.yakitoriya.ru/static/build/img/svg/yaki_logo.svg" alt="Якитория - доставка суши" />
+                    </li>
+                    <li>Акции</li>
+                    <li>Рестораны</li>
+                    <li>О доставке</li>
+                    <li><span><a href="#"><img className={styles.Point} src="https://w7.pngwing.com/pngs/239/38/png-transparent-computer-icons-location-others-angle-desktop-wallpaper-black.png" alt="Point" /></a></span><a href="#"><span className={styles.Header_region__active}>Москва и МО </span></a>
+                    <li>
                         <Link to={'/'}>
                             <img
                                 src="https://www.aislelabs.com/wp-content/uploads/2020/04/1280px-YO_Sushi_logo.svg_.png"
