@@ -2,4 +2,25 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+
+  p {
+    width: 110px;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+
+  & .start{
+    text-align: start;
+  }
+
+  & .end{
+    text-align: end;
+  }
+
+  span{
+    margin-left: 5px;
+  }
 }
